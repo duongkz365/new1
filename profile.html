@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="tab-title" >Profile</title>
+    <!-- base -->
+    <script src="./assets/js/jQuery3.6.js"></script>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="icon" href="./assets/img/web_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- google roboto fonts -->
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css"> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script> <!-- touch swipe -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/Bootstrapv5.1.3.css">
+    <!-- end base -->
+    
+    
+    <link rel="stylesheet" href="./assets/css/profile.css">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <div class="content">
+            <section class="p_section-1">
+                <div class="container">
+                    <div class="sec-1-sub-title">
+                        <a href="./index.html" class="sec-1-sub-title-link">
+                            Trang Chủ
+                        </a>
+                        <span class="sec-1-nsub">
+                            Trang khách hàng
+                        </span>
+                    </div>
+                    <div class="sec-1-tilte">
+                        <h2 class="sec-1-m-title">
+                            TRANG KHÁCH HÀNG
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <section class="p_section-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xl-2 col-lg-3 col-md-3 col-sm-12 col-12">
+                            <h2 class="sec-2-title">
+                                Trang Tài Khoản
+                            </h2>
+                            <h4 class="sec-2-hi">
+                                <!-- render hello -->
+                            </h4>
+                            <ul class="sec-2-list">
+                                <li class="sec-2-item">
+                                    <a href="#" class="sec-2-link info_link active_left">
+                                        Thông tin tài khoản
+                                    </a>
+                                </li>
+                                <li class="sec-2-item">
+                                    <a href="#" class="sec-2-link cart_link">
+                                        Giỏ hàng của bạn
+                                    </a>
+                                </li>
+                                <li class="sec-2-item">
+                                    <a href="#" class="sec-2-link pass_link">
+                                        Đổi mật khẩu
+                                    </a>
+                                </li>
+                                <li class="sec-2-item">
+                                    <a href="#" class="sec-2-link address_link">
+                                       Sổ địa chỉ
+                                    </a>
+                                </li>
+                                <li class="sec-2-item">
+                                    <a href="#" class="sec-2-link create_link">
+                                        Thêm sản phẩm mới
+                                    </a>
+                                </li>
+                                <li class="sec-2-item">
+                                    <a href="#" class="sec-2-link change_link">
+                                       Chỉnh sửa sản phẩm
+                                    </a>
+                                </li>
+                               
+                                
+                            </ul>
+                        </div>
+                        <div class="col col-xl-10 col-lg-7 col-md-7 col-sm-12 col-12">
+                            <section class="sec-2-tab-1">
+                                <h2 class="sec-2-tab-1-title">
+                                    THÔNG TIN TÀI KHOẢN
+                                </h2>
+                                <div class="row">
+                                    <div class="col col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                                        <span class="sec-2-tab-1-info">
+                                            Họ Tên:
+                                        </span>
+                                    </div>
+                                    <div class="col col-xl-10 col-lg-9 col-md-8 col-sm-6 col-6">
+                                        <span class="sec-2-tab-1-in" id="p_name">
+                                            <!-- render Name -->
+                                        </span>
+                                    </div>
+                                    <div class="col col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                                        <span class="sec-2-tab-1-info">
+                                            Email:
+                                        </span>
+                                    </div>
+                                    <div class="col col-xl-10 col-lg-9 col-md-8 col-sm-6 col-6">
+                                        <span class="sec-2-tab-1-in" id="p_email">
+                                            <!-- render Email -->
+                                        </span>
+                                    </div>
+                                    <div class="col col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                                        <span class="sec-2-tab-1-info">
+                                            Ngày Sinh:
+                                        </span>
+                                    </div>
+                                    <div class="col col-xl-10 col-lg-9 col-md-8 col-sm-6 col-6">
+                                        <span class="sec-2-tab-1-in" id="p_day">
+                                            <!-- render Day of birth -->
+                                        </span>
+                                    </div>
+                                    <div class="col col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+                                        <span class="sec-2-tab-1-info">
+                                            Số điện thoại:
+                                        </span>
+                                    </div>
+                                    <div class="col col-xl-10 col-lg-9 col-md-8 col-sm-6 col-6">
+                                        <span class="sec-2-tab-1-in" id="p_phone">
+                                           <!-- render Phone -->
+                                        </span>
+                                    </div>
+                                </div>
+                                <span class="sec-2-tab-1-edit">
+                                    Chỉnh Sửa Thông Tin
+                                </span>
+                            </section>
+                            <section class="sec-2-tab-1-1">
+                              <!-- render change -->
+                            </section>
+                            <section class="sec-2-tab-2">
+                                <h2 class="sec-2-tab-2-title">
+                                    Giỏ hàng của bạn
+                                </h2>
+                                <table class="sec-2-tab-2-table">
+                                    <!-- render -->
+                                </table>
+                                <div class="sec-2-pay">
+                                    <!-- render -->
+                                </div>
+                            </section>
+                            <section class="sec-2-tab-3">
+                                <h2 class="sec-2-tab-3-title">
+                                    ĐỔI MẬT KHẨU
+                                </h2>
+                                <p class="sec-2-tab-3-description">
+                                    Để đảm bảo tính bảo mật vui lòng đặt mật khẩu với ít nhất 8 ký tự
+                                </p>
+                                <form action="" class="sec-2-tab-3-form">
+                                    <div class="tab-3-from-group">
+                                        <label for="tab-3-oldPassword">Mật Khẩu Cũ</label>
+                                        <input type="text" class="tab-3-input" id="tab-3-oldPassword">
+                                    </div>
+                                    <div class="tab-3-from-group">
+                                        <label for="tab-3-newPassword">Mật Khẩu Mới</label>
+                                        <input type="text" class="tab-3-input" id="tab-3-newPassword">
+                                    </div>
+                                    <div class="tab-3-from-group">
+                                        <label for="tab-3-reNewPassword">Nhập lại mật khẩu</label>
+                                        <input type="text" class="tab-3-input" id="tab-3-reNewPassword">
+                                    </div>
+                                    <button class="tab-3-submit" onclick="changePassword()">Đặt Lại Mật Khẩu</button>
+                                </form>
+                            </section>
+                            <section class="sec-2-tab-4">
+                                <h2 class="sec-2-tab-4-title">
+                                    ĐỊA CHỈ CỦA BẠN
+                                </h2>
+                                <p class="sec-2-tab-4-description">
+                                    Bạn chưa thêm địa chỉ nhận hàng!
+                                </p>
+                                <span class="sec-2-tab-4-btn">
+                                    Thêm Địa Chỉ
+                                </span>
+
+                            </section>
+                            <section class="sec-2-tab-5">
+                                <h2 class="sec-2-tab-5-title">
+                                    THÊM SẢN PHẨM MỚI
+                                </h2>
+                                <p class="sec-2-tab-5-description">
+                                    Hãy cùng Stationery bán những sản phẩm thật thú vị
+                                </p>
+                                <form action="" class="sec-2-tab-5-form">
+                                    <div class="tab-5-form-group">
+                                        <label for="pName" class="form_label">Tên sản phẩm</label>
+                                        <input type="text" name="" id="pName" class="input_control">
+                                        <span class="tab-5-form-message"></span>
+                                    </div>
+                                    <div class="tab-5-form-group">
+                                        <label for="pImgfile" class="form_label">Hình ảnh</label>
+                                        <input type="file" name="" id="pImgfile" class="file_control">
+                                        <span class="tab-5-form-message"></span>
+                                    </div>
+                                    <div class="tab-5-form-group">
+                                        <label for="pImgLink" class="form_label">Hoặc đường dẫn của sản phẩm</label>
+                                        <input type="text" name="" id="pImgLink" class="input_control">
+                                        <span class="tab-5-form-message"></span>
+                                    </div>
+                                    <div class="tab-5-form-group">
+                                        <label for="pPrice" class="form_label">Giá bán</label>
+                                        <input type="number" min="0" name="" id="pPrice" class="input_control">
+                                        <span class="tab-5-form-message"></span>
+                                    </div>
+                                    <div class="tab-5-form-group">
+                                        <label for="pQuantity" class="form_label">Số lượng</label>
+                                        <input type="number" min = "0" name="" id="pQuantity" class="input_control">
+                                        <span class="tab-5-form-message"></span>
+                                    </div>
+                                    <div class="tab-5-form-group">
+                                        <label for="pCategory" class="form_label">Phân loại sản phẩm</label>
+                                        <select name="" id="pCategory" class="option_control">
+                                            <option value="" class="category_option">Chọn ngành hàng phù hợp</option>
+
+                                            <option value="" class="category_option">Bút</option>
+                                            <option value="" class="category_option">Tập vở</option>
+                                            <option value="" class="category_option">Thước kẻ</option>
+                                            <option value="" class="category_option">Giấy các loại</option>
+                                            <option value="" class="category_option">Nhãn vở</option>
+                                            <option value="" class="category_option">Bìa bao</option>
+                                        </select>
+                                        <span class="tab-5-form-message"></span>
+                                    </div>
+                                    <div class="tab-5-form-group">
+                                        <label for="pInfo" class="form_label">Thông tin sản phẩm</label>
+                                        <textarea name="" id="pInfo" cols="30" rows="10" class="textarea_control"></textarea>
+                                        <span class="tab-5-form-message"></span>
+                                    </div>
+                                    <button type="button" class="btn_create-product">Thêm sản phẩm mới</button>
+                                </form>
+                            </section>
+                            <section class="sec-2-tab-6">
+                                <h2 class="sec-2-tab-6-title">
+                                    CHỈNH SỬA SẢN PHẨM
+                                </h2>
+                                <p class="sec-2-tab-6-description">
+                                    Cùng nhau bán những sản phẩm hoàn hảo
+                                </p>
+                                <div class="myProduct">
+                                    <div class="deleteAll">
+                                        <span class="deleteAll-icon">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <span class="deleteAll-description">
+                                            Xóa tất cả
+                                        </span>
+                                    </div>
+                                    <ul class="sec-2-tab-6-list">
+                                        <li class="sec-2-tab-6-item">
+                                            <div class="row">
+                                                <div class="col col-xl-8">
+                                                    <div class="tab-6-info">
+                                                        <span class="tab-6-info-checkbox">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="tab-6-info-image">
+                                                            <img src="./assets/img/avt/avt_03.jpg" alt="" class="tab-6-img">
+                                                        </span>
+                                                        <span class="tab-6-pName">
+                                                            Quần tây không đáy
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                          
+                                                <div class="col col-xl-4 tab-6-align">
+                                                    <div class="tab-6-operation">
+                                                        <span class="tab-6-operation-chan">
+                                                            Chỉnh Sửa
+                                                        </span>
+                                                        <span class="tab-6-operation-del">
+                                                            Xóa
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sec-2-tab-6-item">
+                                            <div class="row">
+                                                <div class="col col-xl-8">
+                                                    <div class="tab-6-info">
+                                                        <span class="tab-6-info-checkbox">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="tab-6-info-image">
+                                                            <img src="./assets/img/avt/avt_03.jpg" alt="" class="tab-6-img">
+                                                        </span>
+                                                        <span class="tab-6-pName">
+                                                            Quần tây không đáy
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                          
+                                                <div class="col col-xl-4 tab-6-align">
+                                                    <div class="tab-6-operation">
+                                                        <span class="tab-6-operation-chan">
+                                                            Chỉnh Sửa
+                                                        </span>
+                                                        <span class="tab-6-operation-del">
+                                                            Xóa
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sec-2-tab-6-item">
+                                            <div class="row">
+                                                <div class="col col-xl-8">
+                                                    <div class="tab-6-info">
+                                                        <span class="tab-6-info-checkbox">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="tab-6-info-image">
+                                                            <img src="./assets/img/avt/avt_03.jpg" alt="" class="tab-6-img">
+                                                        </span>
+                                                        <span class="tab-6-pName">
+                                                            Quần tây không đáy
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                          
+                                                <div class="col col-xl-4 tab-6-align">
+                                                    <div class="tab-6-operation">
+                                                        <span class="tab-6-operation-chan">
+                                                            Chỉnh Sửa
+                                                        </span>
+                                                        <span class="tab-6-operation-del">
+                                                            Xóa
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sec-2-tab-6-item">
+                                            <div class="row">
+                                                <div class="col col-xl-8">
+                                                    <div class="tab-6-info">
+                                                        <span class="tab-6-info-checkbox">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                        <span class="tab-6-info-image">
+                                                            <img src="./assets/img/avt/avt_03.jpg" alt="" class="tab-6-img">
+                                                        </span>
+                                                        <span class="tab-6-pName">
+                                                            Quần tây không đáy
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                          
+                                                <div class="col col-xl-4 tab-6-align">
+                                                    <div class="tab-6-operation">
+                                                        <span class="tab-6-operation-chan">
+                                                            Chỉnh Sửa
+                                                        </span>
+                                                        <span class="tab-6-operation-del">
+                                                            Xóa
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="sec-2-tab-7">
+                                <form action="" class="sec-2-tab-7-form">
+                                    <!-- render -->
+                                </form>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+<script src="./assets/js/base.js"></script>
+<script src="./assets/js/render.js"></script>
+
+</html>

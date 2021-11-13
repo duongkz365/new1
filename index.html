@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationary</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    
+    <script src="./assets/js/slickSlider.js"></script>
+    <link rel="stylesheet" href="./assets/css/slickSlider.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="./assets/img/web_icon.png" type="image/x-icon" />  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- google roboto fonts -->
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css"> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script> <!-- touch swipe -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    
+</head>
+<body>
+    
+    <div class="app">
+        <a href="#top-page" class="return-top">
+            <i class="ti-angle-up"></i>
+        </a>
+        <script>
+            var scrollToTopBtn = document.querySelector(".return-top");
+            var rootElement = document.documentElement;
+
+            function handleScroll() {
+            // Do something on scroll
+            var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+            if (rootElement.scrollTop / scrollTotal > 0.5) {
+                // Show button
+                scrollToTopBtn.classList.add("return-top-active");
+            } else {
+                // Hide button
+                scrollToTopBtn.classList.remove("return-top-active");
+            }
+            }
+            document.addEventListener("scroll", handleScroll);
+        </script>
+        <header id="top-page" class="header">
+            
+        </header>
+
+        <div class="app__container">
+            <div class="section-1">
+                <div class="wallpaper">
+                    <a href="" class="wallpaper__link">
+                        <div class="wallpaper__slider"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="section-2">
+                <div class="grid wide">
+                    <div class="section-2__category">
+                        <div class="section-2__category-item">
+                            <a href="#" class="section-2__category-item-link">
+                                <img class="category-item__img" src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/cate_1.jpg?1630398243026"
+                                    alt="VPP Học sinh image">
+                                <h3 class="section-2__category-item-title">VPP Học sinh</h3>
+                            </a>
+                        </div>
+                        <div class="section-2__category-item">
+                            <a href="#" class="section-2__category-item-link">
+                                <img class="category-item__img" src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/cate_2.jpg?1630398243026"
+                                    alt="VPP Văn phòng image">
+                                <h3 class="section-2__category-item-title">VPP Văn phòng</h3>
+                            </a>
+                        </div>
+                        <div class="section-2__category-item">
+                            <a href="#" class="section-2__category-item-link">
+                                <img class="category-item__img" src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/cate_3.jpg?1630398243026"
+                                    alt="Phụ kiện image">
+                                <h3 class="section-2__category-item-title">Phụ kiện</h3>
+                            </a>
+                        </div>
+                        <div class="section-2__category-item">
+                            <a href="#" class="section-2__category-item-link">
+                                <img class="category-item__img" src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/cate_4.jpg?1630398243026"
+                                    alt="Cặp - Túi xách image">
+                                <h3 class="section-2__category-item-title">Cặp - Túi xách</h3>
+                            </a>
+                        </div>
+                        <div class="section-2__category-item">
+                            <a href="#" class="section-2__category-item-link">
+                                <img class="category-item__img" src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/cate_5.jpg?1630398243026"
+                                    alt="Dụng cụ văn phòng image">
+                                <h3 class="section-2__category-item-title">Dụng cụ văn phòng</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section-2__arrow-prev">
+                        <span><i class="ti-angle-left"></i></span>
+                    </div>
+                    <div class="section-2__arrow-next">
+                        <span><i class="ti-angle-right"></i></span>
+                    </div>
+                </div> 
+            </div>
+            <div class="section-3">
+                <div class="grid wide">
+                    <div class="section-3__heading">
+                        <a href="" class="section-3__heading-link">
+                            <img class="section-3__heading-img" src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/img_title.png?1630398243026" alt="Flash Sale image">
+                        </a>
+                    </div>
+                    <div class="timer">
+                        
+                    </div>
+                    
+                    <div class="awSlider" >
+                        <div class="carousel">
+                            <!-- render -->
+                        </div>
+                        <div class="carousel-control-prev">
+                            <div class="prev-btn">
+                                <i class="ti-angle-left"></i>
+                            </div>
+                        </div>
+                        <div class="carousel-control-next">
+                            <div class="next-btn">
+                                <i class="ti-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-4">
+                <div class="section-4__background">
+                    <div class="product-container">
+                        <h2 class="product-container__heading">
+                            <a href="" class="product-container__heading-link">
+                                SẢN PHẨM NỔI BẬT
+                                <img class="product-container__heading-img" src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/icon_after_title.png?1630049131390" alt="">
+                            </a>
+                        </h2>
+                        <div class="grid wide">
+                            <div class="carousel-2" >
+                                <div class="carousel-2-item">
+                                    <div class="product-item">
+                                        <div class="product-action">
+                                            <a href="" class="product-action__link">
+                                                <i class="ti-heart product-action__icon"></i>
+                                                <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                            </a>
+                                        </div>
+                                        <a href="" class="product-item__link">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp10.jpg?v=1629774327000" alt=""
+                                                class="product-item__img">
+                                        </a>
+                                        <div class="product-item__info product-item__info-action">
+                                            <a href="" class="product-item__name" title="Vở viết kẻ ngang nhiều hình siêu ngộ nghĩnh">Vở
+                                                viết kẻ
+                                                ngang nhiều hình siêu ngộ nghĩnh</a>
+                                            <div class="product-item__price">
+                                                <span class="product-item__price-current" style="font-size: 24px;">12.000₫</span>
+                                                <span class="product-item__price-old" style="font-size: 14px;">41.000₫</span>
+                                            </div>
+                                        </div>
+                                        <a href="" class="add-to-cart__link add-to-cart__action">
+                                            <button class="add-to-cart__btn">
+                                                <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                                <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carousel-2-item">
+                                    <div class="product-item">
+                                        <div class="product-action">
+                                            <a href="" class="product-action__link">
+                                                <i class="ti-heart product-action__icon"></i>
+                                                <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                            </a>
+                                        </div>
+                                        <a href="" class="product-item__link">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp8-3.jpg?v=1629774002000" alt=""
+                                                class="product-item__img">
+                                        </a>
+                                        <div class="product-item__info product-item__info-action">
+                                            <a href="" class="product-item__name" title="Hộp đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng">Hộp đựng văn phòng phẩm bằng nhựa trong suốt tiện dụng</a>
+                                            <div class="product-item__price">
+                                                <span class="product-item__price-current" style="font-size: 24px;">15.000₫</span>
+                                                <span class="product-item__price-old" style="font-size: 14px;">25.000₫</span>
+                                            </div>
+                                        </div>
+                                        <a href="" class="add-to-cart__link add-to-cart__action">
+                                            <button class="add-to-cart__btn">
+                                                <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                                <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carousel-2-item">
+                                    <div class="product-item">
+                                        <div class="product-action">
+                                            <a href="" class="product-action__link">
+                                                <i class="ti-heart product-action__icon"></i>
+                                                <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                            </a>
+                                        </div>
+                                        <a href="" class="product-item__link">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp7.jpg?v=1629773880000" alt=""
+                                                class="product-item__img">
+                                        </a>
+                                        <div class="product-item__info product-item__info-action">
+                                            <a href="" class="product-item__name" title="Sổ tay cá nhân tiện dụng văn phòng phẩm">Sổ tay cá nhân tiện dụng văn phòng phẩm</a>
+                                            <div class="product-item__price">
+                                                <span class="product-item__price-current" style="font-size: 24px;">28.000₫</span>
+                                                <span class="product-item__price-old" style="font-size: 14px;">69.000₫</span>
+                                            </div>
+                                        </div>
+                                        <a href="" class="add-to-cart__link add-to-cart__action">
+                                            <button class="add-to-cart__btn">
+                                                <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                                <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="carousel-2-item">
+                                    <div class="product-item">
+                                        <div class="product-action">
+                                            <a href="" class="product-action__link">
+                                                <i class="ti-heart product-action__icon"></i>
+                                                <!-- <i class="fas fa-heart product-action__icon--liked"></i> -->
+                                            </a>
+                                        </div>
+                                        <a href="" class="product-item__link">
+                                            <img src="//bizweb.dktcdn.net/thumb/large/100/434/558/products/sp6.jpg?v=1629773702000" alt=""
+                                                class="product-item__img">
+                                        </a>
+                                        <div class="product-item__info product-item__info-action">
+                                            <a href="" class="product-item__name" title="Máy Tính Mini Gấu Bỏ Túi Dễ Thương">Máy Tính Mini Gấu Bỏ Túi Dễ Thương</a>
+                                            <div class="product-item__price">
+                                                <span class="product-item__price-current" style="font-size: 24px;">29.000₫</span>
+                                                <span class="product-item__price-old" style="font-size: 14px;">49.000₫</span>
+                                            </div>
+                                        </div>
+                                        <a href="" class="add-to-cart__link add-to-cart__action">
+                                            <button class="add-to-cart__btn">
+                                                <i class="add-to-cart__icon ti-shopping-cart"></i>
+                                                <span class="add-to-cart__text">Thêm vào giỏ</span>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-5">
+                <div class="product-container-section-5">
+                    <h2 class="product-container__heading">
+                        <a href="" class="product-container__heading-link">
+                            VĂN PHÒNG PHẨM CHO BẠN
+                            <img class="product-container__heading-img"
+                                src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/icon_after_title.png?1630049131390" alt="">
+                        </a>
+                    </h2>
+                    <div class="section-5__selection">
+                        <ul class="section-5__selection-list">
+                            <li class="section-5__selection-item section-5__selection-item--active" id="book_click">Sách</li>
+                            <li class="section-5__selection-item">Vở</li>
+                            <li class="section-5__selection-item">Bút</li>
+                            <li class="section-5__selection-item">Bộ cắt dán</li>
+                            <li class="section-5__selection-item">Bút màu</li>
+                        </ul>
+                    </div>
+                    <div class="grid wide">
+                        <div class="section-5__tab-1 section-5__tab-current">
+                            <div class="carousel-3">
+                               <!-- render book -->
+                            </div>
+                        </div>
+                        
+                        <div class="section-5__tab-2">
+                            <div class="carousel-4">
+                                <!-- render note -->
+                                
+                            </div>
+                        </div>
+                        <div class="section-5__tab-3">
+                            <div class="grid wide">
+                                <div class="tab-3__wrap">
+                                    <h2>Không có sản phẩm nào trong danh mục này.</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var selectItems = document.querySelectorAll('.section-5__selection-item')
+                    var tab1 = document.querySelector('.section-5__tab-1')
+                    var tab2 = document.querySelector('.section-5__tab-2')
+                    var tab3 = document.querySelector('.section-5__tab-3')
+                    for (selectItem of selectItems) {
+                        selectItem.addEventListener('click', function () {
+                            for (item of selectItems) {
+                                item.classList.remove('section-5__selection-item--active');
+                            }
+                            this.classList.add('section-5__selection-item--active');
+                            if (this == selectItems[0]) {
+                                tab3.classList.remove('section-5__tab-current')
+                                tab2.classList.remove ('section-5__tab-current')
+                                tab1.classList.add('section-5__tab-current')
+                            }
+                            else if (this == selectItems[1]) {
+                                tab3.classList.remove('section-5__tab-current')
+                                tab1.classList.remove ('section-5__tab-current')
+                                tab2.classList.add('section-5__tab-current')
+                            }
+                            else if (this == selectItems[2] || this == selectItems[3] || this == selectItems[4])
+                            {
+                                tab2.classList.remove('section-5__tab-current')
+                                tab1.classList.remove ('section-5__tab-current')
+                                tab3.classList.add('section-5__tab-current')
+                            }
+                        })
+                    }
+                </script>
+            </div>
+            <div class="section-6">
+                <div class="our-service">
+                    <div class="our-service__container grid wide">
+                        <div class="row">
+                            <div class="col l-6 m-6 c-12">
+                                <div class="section-6__left">
+                                    <div class="our-service__title">
+                                        <h1>DỊCH VỤ CỦA CHÚNG TÔI</h1>
+                                    </div>
+                                    <ul class="our-service__list">
+                                        <li class="our-service__item">
+                                            <img src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/icon_service_1.svg?1630398243026" alt="" class="our-service__item-img">
+                                            <div class="our-service__item-info">
+                                                <h3 class="our-service__item-info-heading">GIAO HÀNG FREE NỘI THÀNH</h3>
+                                                <span class="our-service__item-info-desc">Giao free trong nội thành HN và HCM</span>
+                                            </div>
+                                        </li>
+                                        <li class="our-service__item">
+                                            <img src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/icon_service_2.svg?1630398243026" alt=""
+                                                class="our-service__item-img">
+                                            <div class="our-service__item-info">
+                                                <h3 class="our-service__item-info-heading">TRẢ HÀNG TRONG VÒNG 24H</h3>
+                                                <span class="our-service__item-info-desc">Hỗ trợ trả hàng cho khách khi sản phẩm có lỗi</span>
+                                            </div>
+                                        </li>
+                                        <li class="our-service__item">
+                                            <img src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/icon_service_3.svg?1630398243026" alt=""
+                                                class="our-service__item-img">
+                                            <div class="our-service__item-info">
+                                                <h3 class="our-service__item-info-heading">KIỂM TRA HÀNG KHI NHẬN HÀNG</h3>
+                                                <span class="our-service__item-info-desc">Khách hàng kiểm tra hàng trước khi nhận</span>
+                                            </div>
+                                        </li>
+                                        <li class="our-service__item">
+                                            <img src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/icon_service_4.svg?1630398243026" alt=""
+                                                class="our-service__item-img">
+                                            <div class="our-service__item-info">
+                                                <h3 class="our-service__item-info-heading">THANH TOÁN COD</h3>
+                                                <span class="our-service__item-info-desc">Hỗ trợ khách hàng thanh toán cod</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <div class="section-6__block-service">
+                                    <img src="//bizweb.dktcdn.net/100/434/558/themes/831317/assets/img_people.png?1630398243026" alt="" class="section-6__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <!-- slide-in-user-cart -->
+    <input hidden type="checkbox" name="" class="cart-input" id="cart-input-id">
+    <label for="cart-input-id" class="overlay"></label>
+    <div class="slide-in-cart">
+        <div class="slide-in-cart__heading">
+            <h4 class="slide-in-cart__title">GIỎ HÀNG</h4>
+            <label for="cart-input-id" class="slide-in-cart__close">
+                <svg class="slide-in-cart__close-icon" viewBox="0 0 16 14">
+                    <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+                </svg>
+            </label>
+        </div>
+        <ul class="cart__list">
+           <!-- render -->
+        </ul>
+        <div class="cart__pay">
+            <div class="cart__pay-totalPrice">
+                <div class="cart__pay-totalPrice-text">Tổng tiền</div>
+                <div class="cart__pay-totalPrice-number">35.000₫</div>
+            </div>
+            <button class="cart__pay-btn">Thanh toán</button>
+        </div>
+    </div>
+    <!-- Modal log-in, register -->
+    <div class="modal js-modal-login js-modal-close">
+        <div class="modal-container js-modal-container">
+            <div class="modal-header">
+                <button class="modal-header__btn modal__header-active-btn">Đăng nhập</button>
+                <button class="modal-header__btn js-click-register">Đăng ký</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <ul class="modal-body__list">
+                        <li class="modal-body__item">
+                            <label for="log-in-email" class="modal-label">
+                                EMAIL
+                                <span>*</span>
+                            </label>
+                            <input id="log-in-email" required type="email" class="modal-input"  placeholder="Nhập Địa chỉ Email">
+                        </li>
+                        <li class="modal-body__item">
+                            <label for="log-in-password" class="modal-label">
+                                MẬT KHẨU
+                                <span>*</span>
+                            </label>
+                            <input id="log-in-password" required type="password" class="modal-input" placeholder="Nhập Mật khẩu">
+                        </li>
+                    </ul>
+                    <a href="" class="modal__forget-pass">Quên mật khẩu?</a>
+                    <div class="modal-body__btn">
+                        <button class="modal__btn js-modal-close">Trở lại</button>
+                        <input type="button" id="btn_submit-login" class="modal__btn" value="Đăng nhập"></input>
+                    </div>
+                </form>
+                <p class="log-in-note">Stationery cam kết bảo mật và sẽ không bao giờ đăng
+                hay chia sẻ thông tin mà chưa có được sự đồng ý của bạn.</p>
+            </div>
+            <div class="modal__footer js-login-content">
+                <span>hoặc đăng nhập qua</span>
+                <a href="" class="modal__footer-link">
+                    <img src="//bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg" alt="" class="modal__footer-img">
+                </a>
+                <a href="" class="modal__footer-link">
+                    <img src="//bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg" alt="" class="modal__footer-img">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal js-modal-register js-modal-close">
+        <div class="modal-container js-modal-container">
+            <div class="modal-header">
+                <button class="modal-header__btn js-click-login">Đăng nhập</button>
+                <button class="modal-header__btn modal__header-active-btn">Đăng ký</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <ul class="modal-body__list">
+                        <li class="modal-body__item">
+                            <label for="register-family-name" class="modal-label">
+                                HỌ
+                                <span>*</span>
+                            </label>
+                            <input id="register-family-name" type="text" class="modal-input" required placeholder="Nhập Họ">
+                        </li>
+                        <li class="modal-body__item">
+                            <label for="register-name" class="modal-label">
+                                TÊN
+                                <span>*</span>
+                            </label>
+                            <input id="register-name" type="text" class="modal-input" required placeholder="Nhập Tên">
+                        </li>
+                        <li class="modal-body__item">
+                            <label for="register-name" class="modal-label">
+                                SỐ ĐIỆN THOẠI
+                                <span>*</span>
+                            </label>
+                            <input id="register-phone" type="tel" class="modal-input" required placeholder="Nhập Số điện thoại">
+                        </li>
+                        <li class="modal-body__item">
+                            <label for="register-email" class="modal-label">
+                                EMAIL
+                                <span>*</span>
+                            </label>
+                            <input id="register-email" type="email" class="modal-input" required placeholder="Nhập Địa chỉ Email">
+                        </li>
+                        <li class="modal-body__item">
+                            <label for="register-password" class="modal-label">
+                                MẬT KHẨU
+                                <span>*</span>
+                            </label>
+                            <input id="register-password" type="password" class="modal-input" required placeholder="Nhập Mật khẩu">
+                        </li>
+                    </ul>
+                    <div class="modal-body__btn">
+                        <button class="modal__btn js-modal-close">Trở lại</button>
+                        <input type="submit" class="modal__btn" value="Tạo tài khoản"></input>
+                    </div>
+                </form>
+            </div>
+            <div class="modal__footer js-login-content">
+                <span>hoặc đăng nhập qua</span>
+                <a href="" class="modal__footer-link">
+                    <img src="//bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg" alt="" class="modal__footer-img">
+                </a>
+                <a href="" class="modal__footer-link">
+                    <img src="//bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg" alt="" class="modal__footer-img">
+                </a>
+            </div>
+        </div>
+    </div>
+   
+    <!-- js header text -->
+    <script>
+        var slogans = ["Stationary lựa chọn số 1 của bạn - Hãy đến với chúng tôi", "Stationary lựa chọn số 1 cho bạn"]
+        var textBlock = $(".header__navbar-slogan span");
+        var i = 0;
+            setInterval (function () {
+                textBlock.fadeOut(function () {
+                    textBlock.html(slogans[i]);
+                    i++;
+                    if (i == 2) i = 0;
+                    textBlock.fadeIn();
+                })  
+            }, 3000);
+    </script>
+    <div class="overlay-cate"></div>
+
+
+    <div class="animation_loading">
+        <div class="loading">
+            <img src="./assets/img/Chunk-3.4s-200px.gif" alt="" class="loading_img">
+        </div>
+    </div>
+</body>
+<script >
+    // $('.header').load('./import/header.html');
+    // $('.footer').load('./import/footer.html');
+</script>
+<script src="./assets/js/base.js"></script>
+<script src="./assets/js/render.js"></script>
+ <!-- js modal login -->
+ <script>
+    const modalogin = document.querySelector('.js-modal-login')
+    const modalRegister = document.querySelector('.js-modal-register')
+    const modalContainers = document.querySelectorAll('.js-modal-container')
+    const loginLinks = document.querySelectorAll('.js-click-login')
+    const registerLinks = document.querySelectorAll('.js-click-register')
+    const modalCloses = document.querySelectorAll('.js-modal-close')
+    function showLogin() {
+        modalRegister.classList.remove('open')
+        modalogin.classList.add('open')
+    }
+    function showRegister() {
+        modalogin.classList.remove('open')
+        modalRegister.classList.add('open')
+    }
+    function hide() {
+        modalogin.classList.remove('open')
+        modalRegister.classList.remove('open')
+    }
+    for (const loginLink of loginLinks)
+    {
+        loginLink.addEventListener('click', showLogin)
+    }
+    for (const registerLink of registerLinks)
+    {
+        registerLink.addEventListener('click', showRegister)
+    }
+    for (const modalClose of modalCloses)
+    {
+        modalClose.addEventListener('click', hide)
+    }
+    for (const modalContainer of modalContainers)
+    {
+        modalContainer.addEventListener('click', function (e) {
+            e.stopPropagation();
+        })
+    }
+</script>
+<script src="./assets/js/fileJS.js"></script>
+
+</html>

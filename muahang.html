@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Thanh toán</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/checkout/">
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./assets/js/jQuery3.6.js"></script>
+    <link rel="stylesheet" href="./assets/css/buy.css">
+    <!-- <link rel="stylesheet" href="./assets/css/Bootstrapv5.1.3.css"> -->
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="icon" href="./assets/img/web_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> <!-- google roboto fonts -->
+    <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css"> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script> <!-- touch swipe -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+   
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .container {
+        z-index: 0;
+      }
+
+      @media (min-width: 576px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-light">
+
+    <header class="header"></header>
+    
+    <div class="container">
+         <div class="py-5 text-center">
+          <h2>Thanh toán</h2>
+          <p class="lead">Xin Hân hạnh phục vụ quý khách</p>
+         </div>
+        <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Giỏ hàng</span>
+        <span class="badge badge-secondary badge-pill">3</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Tên sản phẩm</h6>
+            <small class="text-muted">Mô tả ngắn gọn</small>
+          </div>
+          <span class="text-muted">12000đ</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Sản phẩm 2</h6>
+            <small class="text-muted">Mô tả ngắn gọn</small>
+          </div>
+          <span class="text-muted">8000đ</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">Sản phẩm 3</h6>
+            <small class="text-muted">Mô tả ngắn gọn</small>
+          </div>
+          <span class="text-muted">5000đ</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div class="text-success">
+            <h6 class="my-0">Mã khuyến mãi</h6>
+            <small>Ưu đãi</small>
+          </div>
+          <span class="text-success">-5%</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Tổng cộng </span>
+          <strong>?</strong>
+        </li>
+      </ul>
+
+      <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Mã khuyến mãi">
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">Áp dụng</button>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-md-7 mb1">
+          <button style="background-color: black;"class="btn btn-primary btn-lg btn-block" type="submit" >Quay về giỏ hàng</button>
+        </div>
+        <div class="col-md-5 mb1">
+          <button style="background-color: black;"class="btn btn-primary btn-lg btn-block" type="submit" >Đặt hàng</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Thông tin thanh toán</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Họ</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              không hợp lệ!
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Tên</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Không hợp lệ
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="username">Tên tài khoản</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"></span>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="Tên tài khoản" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              không hợp lệ!
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="email">Email <span class="text-muted">(Tùy chọn)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="123@gmail.com">
+          <div class="invalid-feedback">
+            Không hợp lệ!
+          </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="SĐT">SĐT <span class="text-muted">(Tùy chọn)</span></label>
+            <input type="text" class="form-control" id="SĐT" placeholder="Nhập SĐT">
+          </div>
+
+        <div class="mb-3">
+          <label for="address">Địa chỉ</label>
+          <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ" required>
+          <div class="invalid-feedback">
+            Hãy nhập địa chỉ giao hàng!
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="Tinh">Tỉnh/Thành</label>
+            <input type="text" class="form-control" id="Tinh" placeholder="Nhập Tỉnh/Thành" required>
+            <div class="invalid-feedback">
+            Không hợp lệ!
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="Quan">Quận/Huyện</label>
+            <input type="text" class="form-control" id="Quan" placeholder="Nhập Quận/Huyện" required>
+            <div class="invalid-feedback">
+            Không hợp lệ!
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="Phuong">Phường/Xã</label>
+            <input type="text" class="form-control" id="Phuong" placeholder="Nhập Phường/Xã" required>
+            <div class="invalid-feedback">
+            Không hợp lệ!
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+            <label for="ghichu">Ghi chú<span class="text-muted">(Tùy chọn)</label>
+            <input type="text" class="form-control" id="ghichu" placeholder="" required>
+            <div class="invalid-feedback">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="vanchuyen">Vận chuyển</label>
+            <input type="text" class="form-control" id="vanchuyen" placeholder="Vui lòng nhập thông tin giao hàng" required>
+            <div class="invalid-feedback">
+            </div>
+        </div>
+        <hr class="mb-4">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="save-info">
+          <label class="custom-control-label" for="save-info">Lưu thông tin cho lần tới</label>
+        </div>
+        <hr class="mb-4">
+
+        <h4 class="mb-3">Thanh toán</h4>
+
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="cod" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="cod">Thanh toán khi giao hàng(COD)</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="momo" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="momo">Ví momo</label>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <button style="background-color: black;"class="btn btn-primary btn-lg btn-block" type="submit" >Kiểm tra thông tin</button>
+      </form>
+    </div>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="https://getbootstrap.com/docs/4.3/examples/checkout/form-validation.js"></script>
+</body>
+
+<script src="./assets/js/base.js"></script>
+</html>
+
+
